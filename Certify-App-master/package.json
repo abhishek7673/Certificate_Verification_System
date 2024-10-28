@@ -1,0 +1,18 @@
+{
+  "name": "project-job-listing-portal",
+  "version": "1.0.0",
+  "description": "Our Job Listing Portal is a dynamic web application designed to connect job seekers with potential employers efficiently.",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install && cd client && npm install && cd ../server && npm install",
+    "client": "cd ./client && npm run start",
+    "server": "cd ./server && npm run server",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
